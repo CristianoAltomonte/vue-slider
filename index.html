@@ -22,6 +22,11 @@
             <i class="fa-solid fa-arrow-left fa-2x mx-3" @click="back"></i></i>
             <img :src="obj[indice].image" alt="image" class="img-thumbnail w-50">
             <i class="fa-solid fa-arrow-right fa-2x mx-3" @click="next"></i>
+            <div class="my-2">
+                <span role="button" v-for="(elem, index) in obj" @click="gallery(index)">&#927;</span>
+
+            </div>
+
         </div>
 
 
